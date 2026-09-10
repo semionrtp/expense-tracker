@@ -1,4 +1,4 @@
-import json
+ import json
 
 try:
     with open("expenses.json", "r") as file:
@@ -14,7 +14,7 @@ def show_total():
     tot=0
     for expense in expenses:
         tot+=expense['amount']
-    print(tot)
+    print("Total expenses:", tot)
 def view_expenses():
     for expense in expenses:
         print(expense['amount'],expense['category'],
